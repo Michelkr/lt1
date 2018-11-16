@@ -25,4 +25,5 @@ apt-get install -y kubelet kubeadm kubectl
 systemctl enable docker
 
 #set join node to master
-kubeadm join 192.168.10.1:6443 --token 1n4uaw.cgkvg26yowx7izjl --discovery-token-ca-cert-hash sha256:42c998d48530f155f467069bf3ddf2f72fb12cb478c141e03c0c60a4436126e1
+#kubeadm join 192.168.10.1:6443 --token 1n4uaw.cgkvg26yowx7izjl --discovery-token-ca-cert-hash sha256:42c998d48530f155f467069bf3ddf2f72fb12cb478c141e03c0c60a4436126e1
+kubeadm token create --print-join-command 
